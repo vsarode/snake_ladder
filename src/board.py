@@ -13,7 +13,7 @@ class Board:
         next_value = player.position + value_on_dice
         if self.snakes.get(next_value):
             print(
-                f'Snack bites to player f{player.name} with start position: {next_value} to {self.snakes.get(next_value)}')
+                f'Snack bites to player {player.name} with start position: {next_value} to {self.snakes.get(next_value)}')
             time.sleep(2)
             player.position = self.snakes.get(next_value)
         else:
